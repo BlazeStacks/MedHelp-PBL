@@ -12,9 +12,6 @@ node_modules/
 # Local file storage (only used when STORAGE_PROVIDER=local)
 backend/storage/
 
-# Local scratch Postgres cluster (created during development, not part of the app)
-.pgdata/
-
 # IDE
 .idea/
 *.iml
@@ -26,9 +23,6 @@ Thumbs.db
 
 # Logs
 *.log
-
-# Generated TypeScript build info
-*.tsbuildinfo
 
 # Python (planned AI micro-service)
 __pycache__/
