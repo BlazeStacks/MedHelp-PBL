@@ -1,0 +1,39 @@
+# Build output
+target/
+dist/
+node_modules/
+
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+**/src/main/resources/.env
+
+# Local file storage (only used when STORAGE_PROVIDER=local)
+backend/storage/
+
+# Local scratch Postgres cluster (created during development, not part of the app)
+.pgdata/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated TypeScript build info
+*.tsbuildinfo
+
+# Python (planned AI micro-service)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+.freebuff/

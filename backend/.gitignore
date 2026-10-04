@@ -1,0 +1,25 @@
+# Build output
+target/
+*.class
+
+# Secrets — never commit these
+.env
+**/src/main/resources/.env
+
+# Uploaded demo documents (storage abstraction writes here when provider=local)
+storage/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
