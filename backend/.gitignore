@@ -7,7 +7,7 @@ target/
 **/src/main/resources/.env
 
 # Uploaded demo documents (storage abstraction writes here when provider=local)
-storage/
+/storage/
 
 # IDE
 .idea/
