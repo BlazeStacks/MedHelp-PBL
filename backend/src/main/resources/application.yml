@@ -40,7 +40,9 @@ spring:
     default-property-inclusion: non_null
 
 server:
-  port: ${SERVER_PORT:8080}
+  # Render (and most PaaS) inject PORT and requires the app to bind to it;
+  # SERVER_PORT still wins for local runs, and 8080 remains the fallback.
+  port: ${SERVER_PORT:${PORT:8080}}
   error:
     include-message: always
     include-binding-errors: always
